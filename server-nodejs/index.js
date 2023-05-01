@@ -6,8 +6,9 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: true }));
 
-const CHAT_ENGINE_PROJECT_ID = "";
-const CHAT_ENGINE_PRIVATE_KEY = "";
+
+const CHAT_ENGINE_PROJECT_ID = "2a94f539-fe05-499c-bdab-39369a15b732";
+const CHAT_ENGINE_PRIVATE_KEY = "74152ddc-c21f-4ede-9feb-8cf7c60e0ff7";
 
 app.post("/signup", async (req, res) => {
   const { username, secret, email, first_name, last_name } = req.body;
@@ -46,4 +47,4 @@ app.post("/login", async (req, res) => {
 });
 
 // vvv On port 3001!
-app.listen(3001);
+app.listen(443);
