@@ -50,4 +50,4 @@ app.post("/login", async (req, res) => {
 
 // Docs at rest.chatengine.io
 // vvv On port 3001!
-app.listen(443);
+app.listen(80);
